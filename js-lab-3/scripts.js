@@ -77,8 +77,8 @@ console.log(findLowestScore(submissions));
 
 function findAverageScore(array) {
   let average = 0;
-  for (let i = 0; i < array.length; i++) {
-    let currentNum = array[i].score;
+  for (let people of array) {
+    let currentNum = people.score;
     average += currentNum;
   }
   average = average / array.length;
